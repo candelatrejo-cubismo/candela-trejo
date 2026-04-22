@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+ul {
+  list-style: none;   /* elimina los puntitos */
+  padding: 0;
+  margin: 0;
+}
+
+img {
+  border-radius: 15px;   /* redondea los bordes */
+}
+
+h1 {
+  color:#ffffff;
+  background-color:#ff6d00;
+  text-decoration: underline;
+  font-family: 'Montserrat Alternates';
+  font-weight: 900; /* BLACK */
+}
+
+h2 {
+  color: #1ec853;
+  background-color: #a41d1d;
+  text-decoration: underline;
+  font-family: 'Montserrat Alternates';
+  font-weight:700; /* SEMIBOLD */
+}
+
+h3 {
+  color:#ffffff;
+  background-color:#ff6d00;
+  text-decoration: underline;
+  font-family: 'Montserrat Alternates';
+  font-weight:600; /* LIGHT */
+}
+
+h4 {
+  color:#ff6d00;
+  text-decoration: underline;
+  font-family: 'Montserrat Alternates';
+  font-weight:500; /* MEDIUM */
+}
+
+h5 {
+  color:#ffffff;
+  font-family: 'Montserrat Alternates';
+  font-weight:600 ; /* THIN */
+}
+
+p {
+  color: #0a0a0a;
+  font-family: 'Montserrat Alternates';
+  font-weight:400; /* THIN */
+  column-count: 1;   /* base: una columna */
+  column-gap: 20px;
+}
+
+body {
+  background-color: #dfe6f0;
+}
+
+.nav-header ul {
+  font-family: 'Montserrat Alternates', sans-serif;
+  font-weight:500; 
+  text-decoration: none;
+}
+
+.nav-header li {
+  text-decoration: none;
+  color: #0a0a0a;
+}
+
+.nav-header a {
+  text-decoration: none;
+  color: #0a0a0a;
+}
+
+/* Tipografía para las preguntas frecuentes */
+.faq summary {
+  font-family: 'Montserrat Alternates', sans-serif;
+  font-weight:500;
+}
+
+.faq p {
+  font-family: 'Montserrat Alternates', sans-serif;
+  font-weight: 400;
+}
+
+/* Tipografía para el footer */
+.nav-footer ul {
+  background-color: #1f4054;
+  font-family: 'Montserrat Alternates', sans-serif;
+  font-weight: 500;
+}
+
+/* 4. Dar borde al logo */
+header nav a img {
+  border: 2px solid black;   /* borde negro alrededor del logo */
+  padding: 5px;              /* espacio interno */
+}
+
+/* ========================= */
+/* MEDIA QUERIES RESPONSIVE */
+/* ========================= */
+
+/* Celulares (pantallas pequeñas: hasta 699px) */
+@media (max-width: 699px) {
+  body {
+    background-color: hsl(135, 80%, 50%); /* verde */
+  }
+  p {
+    column-count: 1;
+  }
+}
+
+/* Tablets (pantallas medianas: 700px a 1199px) */
+@media (min-width: 700px) and (max-width: 1199px) {
+  body {
+    background-color: rgb(155, 23, 153); /* violeta */
+  }
+  p {
+    column-count: 2;
+  }
+}
+
+/* Desktop (pantallas grandes: 1200px en adelante) */
+@media (min-width: 1200px) {
+  body {
+    background-color: rgb(206, 199, 3); /* amarillo */
+  }
+  p {
+    column-count: 3;
+  }
+}
