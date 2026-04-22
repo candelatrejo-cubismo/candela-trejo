@@ -122,7 +122,7 @@ main {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-
+flex-wrap: wrap;
   justify-content: center;
   align-items: center;
   gap: 50px;
@@ -145,18 +145,22 @@ section{
 /* celular */
 main {
   flex-direction: column;
+  section{
+    width: 100%;
+  }
 }
 
 /* tablet */
 @media (min-width: 768px) {
-  main {
+  section {
+    width: 50%;
+  } {
     flex-direction: row;
   }
 }
 
 /* compu */
-@media (min-width: 1024px) {
-  main {
+@media (min-width: 1024px) section {
+  width:25%;
     justify-content: space-between;
   }
-}
