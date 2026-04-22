@@ -99,38 +99,22 @@ header nav a img {
   padding: 5px;              /* espacio interno */
 }
 
-/* ========================= */
-/* MEDIA QUERIES RESPONSIVE */
-/* ========================= */
-
-/* Celulares (pantallas pequeñas: hasta 699px) */
-@media (max-width: 699px) {
+@media (min-width: 700px) {
   body {
-    background-color: hsl(135, 80%, 50%); /* verde */
+    background-color: rgb(234, 145, 233); /* violeta */
   }
   p {
-    column-count: 1;
+    column-count: 2; /* dos columnas */
   }
 }
 
-/* Tablets (pantallas medianas: 700px a 1199px) */
-@media (min-width: 700px) and (max-width: 1199px) {
-  body {
-    background-color: rgb(155, 23, 153); /* violeta */
-  }
-  p {
-    column-count: 2;
-  }
-}
-
-/* Desktop (pantallas grandes: 1200px en adelante) */
+/* Desktop (pantallas grandes: desde 1200px) */
 @media (min-width: 1200px) {
   body {
-    background-color: rgb(206, 199, 3); /* amarillo */
+    background-color: rgb(63, 214, 172); /* amarillo */
   }
   p {
-    column-count: 3;
+    column-count: 3; /* tres columnas */
   }
-
 }
 
