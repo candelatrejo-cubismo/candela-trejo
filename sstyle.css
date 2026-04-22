@@ -56,7 +56,7 @@ p {
 }
 
 body {
-  background-color: #dfe6f0;
+  background-color: #6ea4f0;
 }
 
 .nav-header ul {
@@ -132,8 +132,5 @@ header nav a img {
     column-count: 3;
   }
 
-}
-body{
-  background-color: #1f4054;
 }
 
