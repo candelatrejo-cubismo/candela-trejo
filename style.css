@@ -1,166 +1,135 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
 
-ul {
-  list-style: none;   /* elimina los puntitos */
-  padding: 0;
-  margin: 0;
+/*estilos generales*/
+body{
+  background-color: #dfe6f0;
+  font-family: "Open Sans";
+}
+
+ul
+{
+  list-style: none;
+  padding: 0%;
+  margin:0%; 
 }
 
 img {
-  border-radius: 15px;   /* redondea los bordes */
+  border-radius: 15px;
 }
 
-h1 {
-  color:#ffffff;
-  background-color:#ff6d00;
+/*estilo de titulos*/
+
+h1{
+  color: #ff6d00;
   text-decoration: underline;
-  font-family: 'Montserrat Alternates';
-  font-weight: 900; /* BLACK */
+  font-weight: 900;
 }
 
-h2 {
-  color: #1ec853;
-  background-color: #a41d1d;
-  text-decoration: underline;
-  font-family: 'Montserrat Alternates';
-  font-weight:700; /* SEMIBOLD */
-}
-
-h3 {
-  color:#ffffff;
-  background-color:#ff6d00;
-  text-decoration: underline;
-  font-family: 'Montserrat Alternates';
-  font-weight:600; /* LIGHT */
-}
-
-h4 {
-  color:#ff6d00;
-  text-decoration: underline;
-  font-family: 'Montserrat Alternates';
-  font-weight:500; /* MEDIUM */
-}
-
-h5 {
-  color:#ffffff;
-  font-family: 'Montserrat Alternates';
-  font-weight:600 ; /* THIN */
-}
-
-p {
+h2{
   color: #0a0a0a;
-  font-family: 'Montserrat Alternates';
-  font-weight:400; /* THIN */
-  column-count: 1;   /* base: una columna */
+  text-decoration: underline;
+  font: weight 700px;;
+}
+
+h3{
+  color: #ff6d00;
+  text-decoration: underline;
+  font: weight 600;
+}
+
+h4{
+  color: #c8d71e;
+  text-decoration: underline;
+  font: weight 600;
+}
+
+h5{
+  color: #ffffff;
+  text-decoration: underline;
+  font: weight 600;
+}
+
+/*estilos de parrafo*/
+
+p{
+  color: #0a0a0a;
+  font-weight: 300;
+  column-count: 1;
   column-gap: 20px;
 }
 
-body {
-  background-color: #6ea4f0;
+/*estilos del navegador principal*/
+
+.nav-header{
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  font-family: "Open Sans";
+  font-weight: 500;
+  background-color: #1f4054;
+  width: 100%;             
+    margin: 0;               
+    padding: 0;
 }
 
-.nav-header ul {
-  font-family: 'Montserrat Alternates', sans-serif;
-  font-weight:500; 
+.nav-header ul{
+  font-weight: 500;
   text-decoration: none;
+  color: #ffffff;
 }
 
-.nav-header li {
+.nav-header ul li{
   text-decoration: none;
-  color: #0a0a0a;
+  color: #ffffff;
 }
 
-.nav-header a {
+.nav-header a{
   text-decoration: none;
-  color: #0a0a0a;
+  color: #ffffff;
 }
 
-/* Tipografía para las preguntas frecuentes */
-.faq summary {
-  font-family: 'Montserrat Alternates', sans-serif;
-  font-weight:500;
+main{
+  min-height: 100vh;
+  display:flex;
+  flex-direction: column;
+  flex-wrap: wrap;
 }
 
-.faq p {
-  font-family: 'Montserrat Alternates', sans-serif;
+/*tipografia de preguntas frecuentes*/
+
+.faq summary{
+  font-weight: 700;
+}
+
+.faq p{
   font-weight: 400;
 }
 
-/* Tipografía para el footer */
-.nav-footer ul {
-  background-color: #1f4054;
-  font-family: 'Montserrat Alternates', sans-serif;
-  font-weight: 500;
+/*Footer - estilos*/
+
+footer {
+    background-color: #1f4054;
+    font-weight: 400;
 }
 
-/* 4. Dar borde al logo */
-header nav a img {
-  border: 2px solid black;   /* borde negro alrededor del logo */
-  padding: 5px;              /* espacio interno */
-}
-
-@media (min-width: 700px) {
-  body {
-    background-color: rgb(234, 145, 233); /* violeta */
+/*CELULAR*/
+@media (min-width:460px) {
+  /*CELULAR*/
+  p{
+    column-count: 1;
   }
+}
+
+@media (min-width:700px) {
+  /*TABLET*/
   p {
-    column-count: 2; /* dos columnas */
+    column-count: 2;
   }
 }
 
-/* Desktop (pantallas grandes: desde 1200px) */
-@media (min-width: 1200px) {
-  body {
-    background-color: rgb(63, 214, 172); /* amarillo */
-  }
+@media (min-width:1200px) {
+  /*COMPUTADORA*/
   p {
-    column-count: 3; /* tres columnas */
+    column-count: 3;
   }
 }
-
-main {
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  gap: 50px;
-}
-
-section{
-  width: 200px;
-  height: 200px;
-  background-color: rgba(255,255,250,0.4);
-
-}
-
-#ovejanegra { 
-  order: 2;
-  background-color: #0a0a0a;
-  color: azure;
-  align-self: flex-start;
-}
-
-/* celular */
-main {
-  flex-direction: column;
-  section{
-    width: 100%;
-  }
-}
-
-/* tablet */
-@media (min-width: 768px) {
-  section {
-    width: 50%;
-  } {
-    flex-direction: row;
-  }
-}
-
-/* compu */
-@media (min-width: 1024px) section {
-  width:25%;
-    justify-content: space-between;
-  }
