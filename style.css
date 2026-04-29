@@ -113,6 +113,9 @@ footer {
     background-color: #1f4054;
     font-weight: 400;
 }
+footer ul li{
+ margin-bottom: 10px;
+}
 
 /*CELULAR*/
 @media (min-width:460px) {
