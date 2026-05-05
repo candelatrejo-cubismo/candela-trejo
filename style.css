@@ -2,7 +2,7 @@
 
 /*estilos generales*/
 body{
-  background-color: #dfe6f0;
+  background-color: #f2e9dc;
   font-family: "Open Sans";
   margin:0%;
 }
@@ -21,7 +21,7 @@ img {
 /*estilo de titulos*/
 
 h1{
-  color: #ff6d00;
+  color: #c3423f;
   text-decoration: underline;
   font-weight: 900;
 }
@@ -39,7 +39,7 @@ h3{
 }
 
 h4{
-  color: #c8d71e;
+  color: #e0a458;
   text-decoration: underline;
   font: weight 600;
 }
@@ -68,7 +68,7 @@ p{
   gap: 20px;
   font-family: "Open Sans";
   font-weight: 500;
-  background-color: #2689a5;
+  background-color: #1e1e1e;
   width: 100%;             
     margin: 0;               
     padding: 0;
@@ -110,7 +110,7 @@ main{
 /*Footer - estilos*/
 
 footer {
-    background-color: #1f4054;
+    background-color: #141414;
     font-weight: 400;
 }
 footer ul li{
