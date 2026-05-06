@@ -73,17 +73,17 @@ h5{
 </section>
 
 .obras-destacadas {
-  display:flex;
-  flex-wrap:wrap;
-  justify-content:center;
-  gap: 40px;
-  margin:20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;        
+  margin-top: 40px; 
 }
 
-.obras-destacadas img {
-  width: 300px;      
-  height: auto;     
-  object-fit: cover; /* recorta si es necesario */
+.obras-destacadas .obra img {
+  width: 300px;
+  height: auto;
+  object-fit: cover;
   border-radius: 8px;
 }
 
