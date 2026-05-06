@@ -95,6 +95,22 @@ h5{
   object-fit: contain; 
 }
 
+.imagen-principal {
+  display: flex;           
+  align-items: flex-start; 
+  gap: 20px;              
+}
+
+.imagen-principal img {
+  max-width: 300px;  /* tamaño fijo para la imagen */
+  height: auto;      
+  object-fit: contain;
+}
+
+.imagen-principal .texto {
+  flex: 1;           /* ocupa el resto del espacio */
+}
+
 
 
 /*estilos de parrafo*/
