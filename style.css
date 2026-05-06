@@ -74,8 +74,8 @@ h5{
 
 .obras-destacadas {
   display: flex;
-  flex-wrap: nowrap; 
-  justify-content: center;
+  flex-wrap:wrap;
+  justify-content:center;
   gap: 30px;        
   margin-top: 40px; 
 }
