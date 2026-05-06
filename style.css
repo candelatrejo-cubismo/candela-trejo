@@ -188,6 +188,12 @@ footer p{
   color: #ffffff;
 }
 
+/* Enlaces generales del footer */
+footer a {
+  color: #ffffff;        
+  text-decoration: none; 
+  margin-right: 10px;   
+}
 ul{
   list-style: none;
   padding: 0;
