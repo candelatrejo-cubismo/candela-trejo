@@ -27,7 +27,7 @@ h1{
 }
 
 h2{
-  color: #0a0a0a;
+  color: #c3423f;
   text-decoration: underline;
   font: weight 700;
 }
@@ -109,6 +109,17 @@ h5{
 
 .imagen-principal .texto {
   flex: 1;           /* ocupa el resto del espacio */
+}
+
+
+.bloque-imagen img {
+  max-width: 300px;  
+  height: auto;      
+  object-fit: contain;
+}
+
+.bloque-texto {
+  flex: 1;           
 }
 
 
