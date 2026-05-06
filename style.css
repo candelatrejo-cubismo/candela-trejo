@@ -64,6 +64,28 @@ h5{
   margin: 10px;
 }
 
+/*pablo picasso imagenes*/
+
+<section class="obras-destacadas">
+ <img src="imagenes/imagen1.jpg" alt="imagen de obra destacada de picasso" >
+ <img src="imagenes/imagen2.jpg" alt="imagen de obra destacada de picasso" >
+ <img src="imagenes/imagen3.jpg" alt="imagen de obra destacada de picasso" >
+</section>
+
+.obras-destacadas {
+  display:flex;
+  flex-wrap:wrap;
+  justify-content:center;
+  gap:20px;
+}
+
+.obras-destacadas img {
+  width: 300px;      
+  height: auto;     
+  object-fit: cover; /* recorta si es necesario */
+  border-radius: 8px;
+}
+
 /*estilos de parrafo*/
 
 p{
@@ -141,11 +163,11 @@ ul{
   margin: 0;
 }
 
-/*CELULAR*/
-@media (min-width:460px) {
-  /*CELULAR*/
-  p{
-    column-count: 1;
+/* CELULAR */
+@media (max-width:460px) {
+  .obras-destacadas img {
+    width: 100%;
+    max-width: 350px;
   }
 }
 
