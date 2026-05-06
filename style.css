@@ -73,6 +73,11 @@ h5{
   margin-top: 40px; 
 }
 
+.obras-destacadas h3 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
 .obras-destacadas .obra img {
   width: 300px;
   height: auto;
