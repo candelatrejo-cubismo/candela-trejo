@@ -65,13 +65,6 @@ h5{
 }
 
 /*pablo picasso imagenes*/
-
-<section class="obras-destacadas">
- <img src="imagenes/imagen1.jpg" alt="imagen de obra destacada de picasso" >
- <img src="imagenes/imagen2.jpg" alt="imagen de obra destacada de picasso" >
- <img src="imagenes/imagen3.jpg" alt="imagen de obra destacada de picasso" >
-</section>
-
 .obras-destacadas {
   display: flex;
   flex-wrap:wrap;
