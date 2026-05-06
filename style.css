@@ -68,7 +68,7 @@ h5{
 .obras-destacadas {
   display: flex;
   flex-wrap:wrap;
-  justify-content:center;
+  justify-content:flex-start;
   gap: 30px;        
   margin-top: 40px; 
 }
@@ -195,11 +195,7 @@ footer a {
   text-decoration: none; 
   margin-right: 10px;   
 }
-ul{
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
+
 
 /* CELULAR */
 @media (max-width:460px) {
