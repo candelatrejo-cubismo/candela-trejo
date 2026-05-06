@@ -50,6 +50,20 @@ h5{
   font: weight 600;
 }
 
+/*estilos de las imagenes del main*/
+.imagen-main{
+  display:flex;
+  flex-wrap: wrap;
+  flex: row;
+  gap:10px;
+}
+
+.imagen-main img{
+  width: 400px;
+  height: 400px;
+  margin: 10px;
+}
+
 /*estilos de parrafo*/
 
 p{
