@@ -121,6 +121,12 @@ footer p{
   color: #ffffff;
 }
 
+ul{
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
 /*CELULAR*/
 @media (min-width:460px) {
   /*CELULAR*/
