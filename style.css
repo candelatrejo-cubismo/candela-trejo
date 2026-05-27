@@ -157,37 +157,48 @@ p{
 
 /*estilos del navegador principal*/
 
-.nav-header{
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  gap: 20px;
-  font-family: "Open Sans";
-  font-weight: 500;
-  background-color: #1e1e1e;
-  width: 100%;             
-    margin: 0;               
-    padding: 0;
+/* Menú principal horizontal */
+.nav-header ul {
+  display: flex;              /* pone los <li> en fila */
+  gap: 20px;                  /* espacio entre ítems */
+  margin: 0;
+  padding: 0;
 }
 
-.nav-header ul{
-  font-weight: 500;
+.nav-header ul li {
+  position: relative;         /* necesario para ubicar submenús */
+}
+
+.nav-header ul li a {
+  color: #ffffff;
   text-decoration: none;
+  padding: 10px 15px;
+  display: block;
+}
+
+/* Submenús ocultos */
+.nav-header ul li ul {
+  display: none;              /* oculto por defecto */
+  position: absolute;
+  top: 100%;                  /* debajo del ítem padre */
+  left: 0;
+  background-color: #1e1e1e;  /* mismo marrón del header */
+  padding: 10px;
+  min-width: 200px;
+}
+
+.nav-header ul li ul li a {
+  padding: 8px 12px;
   color: #ffffff;
 }
 
-.nav-header ul li{
-  text-decoration: none;
-  color: #ffffff;
+/* Mostrar submenú al pasar el mouse */
+.nav-header ul li:hover > ul {
+  display: block;
 }
 
-.nav-header a{
-  text-decoration: none;
-  color: #ffffff;
-}
 
-main{
-  min-height: 100vh;
+main{  min-height: 100vh;
   display:flex;
   flex-direction: column;
   flex-wrap: wrap;
