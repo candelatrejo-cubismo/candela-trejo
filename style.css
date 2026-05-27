@@ -163,6 +163,7 @@ p{
   gap: 20px;                  /* espacio entre ítems */
   margin: 0;
   padding: 0;
+  background-color: #1e1e1e;
 }
 
 .nav-header ul li {
