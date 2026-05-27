@@ -157,6 +157,10 @@ p{
 
 /*estilos del navegador principal*/
 
+header {
+  background-color: #1e1e1e;   /* marrón en todo el bloque */
+}
+
 /* Menú principal horizontal */
 .nav-header ul {
   display: flex;              /* pone los <li> en fila */
