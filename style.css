@@ -239,11 +239,11 @@ footer a {
 /* Media query para PC (>=1200px) */
 @media (min-width: 1200px) {
   .barra-botones {
-    flex-direction: row;       /* en fila */
+    flex-direction: row;
     justify-content: space-around;
   }
-  .barra-botones a {
-    flex: 1;                   /* cada barra ocupa mismo ancho */
-    max-width: 200px;          /* límite para que no se estiren demasiado */
+  .barra-botones li {
+    flex: 1;
+    max-width: 200px;
   }
 }
