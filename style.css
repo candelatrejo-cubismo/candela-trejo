@@ -155,23 +155,29 @@ p{
   column-gap: 20px;
 }
 
-/*estilos del navegador principal*/
-
+/* Header completo */
 header {
   background-color: #1e1e1e;   /* marrón en todo el bloque */
 }
 
 /* Menú principal horizontal */
-.nav-header ul {
-  display: flex;              /* pone los <li> en fila */
-  gap: 20px;                  /* espacio entre ítems */
+.nav-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+}
+
+.nav-header > ul {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
   margin: 0;
   padding: 0;
-  background-color: #1e1e1e;
 }
 
 .nav-header ul li {
-  position: relative;         /* necesario para ubicar submenús */
+  position: relative;
 }
 
 .nav-header ul li a {
@@ -181,13 +187,13 @@ header {
   display: block;
 }
 
-/* Submenús ocultos */
+/* Submenús desplegables en columna */
 .nav-header ul li ul {
-  display: none;              /* oculto por defecto */
+  display: none;
   position: absolute;
-  top: 100%;                  /* debajo del ítem padre */
+  top: 100%;
   left: 0;
-  background-color: #1e1e1e;  /* mismo marrón del header */
+  background-color: #1e1e1e;
   padding: 10px;
   min-width: 200px;
 }
@@ -200,6 +206,17 @@ header {
 /* Mostrar submenú al pasar el mouse */
 .nav-header ul li:hover > ul {
   display: block;
+}
+
+/* Submenú horizontal solo para ARTISTAS */
+
+.submenu-horizontal {
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
+  position: static;
+  background-color: transparent;
+  padding: 0;
 }
 
 
