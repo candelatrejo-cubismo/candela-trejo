@@ -64,7 +64,34 @@ h5{
   margin: 10px;
 }
 
+/* Contenedor de las barras */
+.barra-botones {
+  list-style: none;
+  padding: 0;
+  margin: 20px 0;
+  display: flex;
+  flex-direction: column;   /* en móvil se apilan */
+  gap: 15px;
+}
+
+
+/* Estilo de cada barra */
+.barra-botones li a {
+  display: block;
+  background-color: #c3423f;   /* mismo rojo que títulos */
+  color: #ffffff;
+  text-align: center;
+  padding: 15px 20px;
+  border-radius: 25px;         /* puntas redondeadas */
+  font-weight: 700;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+
 /*pablo picasso imagenes*/
+
+
 .obras-destacadas {
   display: flex;
   flex-wrap:wrap;
@@ -73,10 +100,7 @@ h5{
   margin-top: 40px; 
 }
 
-.obras-destacadas h3 {
-  text-align: center;
-  margin-bottom: 20px;
-}
+
 
 .obras-destacadas .obra img {
   width: 300px;
@@ -203,12 +227,7 @@ footer a {
 
 
 /* CELULAR */
-@media (max-width:460px) {
-  .obras-destacadas img {
-    width: 100%;
-    max-width: 350px;
-  }
-}
+
 
 @media (min-width:700px) {
   /*TABLET*/
@@ -217,9 +236,14 @@ footer a {
   }
 }
 
-@media (min-width:1200px) {
-  /*COMPUTADORA*/
-  p {
-    column-count: 3;
+/* Media query para PC (>=1200px) */
+@media (min-width: 1200px) {
+  .barra-botones {
+    flex-direction: row;       /* en fila */
+    justify-content: space-around;
+  }
+  .barra-botones a {
+    flex: 1;                   /* cada barra ocupa mismo ancho */
+    max-width: 200px;          /* límite para que no se estiren demasiado */
   }
 }
