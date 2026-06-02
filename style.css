@@ -1,11 +1,24 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
 
 /*estilos generales*/
-body{
+body
+ {
   background-color: #f2e9dc;
   font-family: "Open Sans";
-  margin: 20px;
+  margin: 0;   
 }
+
+main {
+  padding: 20px;
+}
+
+/*footer y header corrección*/
+header, footer {
+  width: 100%;       
+  margin: 0;         
+  padding: 20px;     
+}
+
 
 ul
 {
