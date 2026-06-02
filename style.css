@@ -1,10 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;900&display=swap');
 
-/*estilos generales*/
-body
- {
+/* Estilos generales */
+body {
   background-color: #f2e9dc;
-  font-family: "Open Sans";
+  font-family: "Open Sans", sans-serif;
   margin: 0;   
 }
 
@@ -12,72 +11,69 @@ main {
   padding: 20px;
 }
 
-/*footer y header corrección*/
+/* Header y Footer al corte */
 header, footer {
   width: 100%;       
   margin: 0;         
   padding: 20px;     
 }
 
-
-ul
-{
+ul {
   list-style: none;
-  padding: 0%;
-  margin:0%; 
+  padding: 0;
+  margin: 0; 
 }
 
 img {
   border-radius: 15px;
 }
 
-/*estilo de titulos*/
-
-h1{
+/* Estilo de títulos */
+h1 {
   color: #c3423f;
   text-decoration: underline;
   font-weight: 900;
 }
 
-h2{
+h2 {
   color: #c3423f;
   text-decoration: underline;
-  font: weight 700;
+  font-weight: 700;   /* corregido */
 }
 
-h3{
+h3 {
   color: #ff6d00;
   text-decoration: underline;
-  font: weight 600;
+  font-weight: 600;   /* corregido */
 }
 
-h4{
+h4 {
   color: #e0a458;
   text-decoration: underline;
-  font: weight 600;
+  font-weight: 600;
 }
 
-h5{
+h5 {
   color: #ffffff;
   text-decoration: underline;
-  font: weight 600;
+  font-weight: 600;
 }
 
-/*estilos de las imagenes del main*/
-.imagen-main{
-  display:flex;
+/* Imágenes del main */
+.imagen-main {
+  display: flex;
   flex-wrap: wrap;
-  flex: row;
-  gap:10px;
+  flex-direction: row;   /* corregido */
+  gap: 10px;
 }
 
-.imagen-main img{
+.imagen-main img {
   width: 400px;
   height: 400px;
   margin: 10px;
 }
 
-/* Contenedor de las barras */
+/* Botones */
 .barra-botones {
   list-style: none;
   padding: 0;
@@ -87,33 +83,26 @@ h5{
   gap: 15px;
 }
 
-
-/* Estilo de cada barra */
 .barra-botones li a {
   display: block;
-  background-color: #c3423f;   /* mismo rojo que títulos */
+  background-color: #c3423f;
   color: #ffffff;
   text-align: center;
   padding: 15px 20px;
-  border-radius: 25px;         /* puntas redondeadas */
+  border-radius: 25px;
   font-weight: 700;
   text-decoration: none;
   transition: background-color 0.3s ease;
 }
 
-
-/*pablo picasso imagenes*/
-
-
+/* Obras destacadas */
 .obras-destacadas {
   display: flex;
-  flex-wrap:wrap;
-  justify-content:flex-start;
+  flex-wrap: wrap;
+  justify-content: flex-start;
   gap: 30px;        
   margin-top: 40px; 
 }
-
-
 
 .obras-destacadas .obra img {
   width: 300px;
@@ -122,14 +111,7 @@ h5{
   border-radius: 8px;
 }
 
-.imagen-principal {
-  max-width: 100%;   
-  height: auto;      
-  display: block;    
-  margin: 0 auto;    
-  object-fit: contain; 
-}
-
+/* Imagen principal */
 .imagen-principal {
   display: flex;           
   align-items: flex-start; 
@@ -137,15 +119,14 @@ h5{
 }
 
 .imagen-principal img {
-  max-width: 300px;  /* tamaño fijo para la imagen */
+  max-width: 300px;
   height: auto;      
   object-fit: contain;
 }
 
 .imagen-principal .texto {
-  flex: 1;           /* ocupa el resto del espacio */
+  flex: 1;
 }
-
 
 .bloque-imagen img {
   max-width: 300px;  
@@ -157,23 +138,20 @@ h5{
   flex: 1;           
 }
 
-
-
-/*estilos de parrafo*/
-
-p{
+/* Párrafos */
+p {
   color: #0a0a0a;
   font-weight: 300;
   column-count: 1;
   column-gap: 20px;
 }
 
-/* Header completo */
+/* Header */
 header {
-  background-color: #1e1e1e;   /* marrón en todo el bloque */
+  background-color: #1e1e1e;
 }
 
-/* Menú principal horizontal */
+/* Menú principal */
 .nav-header {
   display: flex;
   justify-content: space-between;
@@ -200,7 +178,7 @@ header {
   display: block;
 }
 
-/* Submenús desplegables en columna */
+/* Submenús */
 .nav-header ul li ul {
   display: none;
   position: absolute;
@@ -216,13 +194,11 @@ header {
   color: #ffffff;
 }
 
-/* Mostrar submenú al pasar el mouse */
 .nav-header ul li:hover > ul {
   display: block;
 }
 
-/* Submenú horizontal solo para ARTISTAS */
-
+/* Submenú horizontal */
 .submenu-horizontal {
   display: flex;
   flex-direction: row;
@@ -232,363 +208,81 @@ header {
   padding: 0;
 }
 
-
-main{  min-height: 100vh;
-  display:flex;
+/* Main */
+main {
+  min-height: 100vh;
+  display: flex;
   flex-direction: column;
   flex-wrap: wrap;
 }
 
-/*tipografia de preguntas frecuentes*/
-
-.faq summary{
+/* FAQ */
+.faq summary {
   font-weight: 700;
 }
 
-.faq p{
+.faq p {
   font-weight: 400;
 }
 
-/*Footer - estilos*/
-
+/* Footer */
 footer {
-    background-color: #141414;
-    font-weight: 400;
-}
-footer ul li{
- margin-bottom: 10px;
+  background-color: #141414;
+  font-weight: 400;
 }
 
-footer p{
+footer ul li {
+  margin-bottom: 10px;
+}
+
+footer p {
   color: #f39f6b;
   font-weight: 500;
 }
 
-/* Enlaces generales del footer */
 footer a {
   color: #ffffff;        
   text-decoration: none; 
   margin-right: 10px;   
 }
 
-
-/* =========================
-   CARRUSEL (OBRAS) - BASE
-   ========================== */
-
-.carousel-container {
-  max-width: 100%;
-  margin: 2rem auto;
-  text-align: center;
-  padding: 0 1rem;
-}
-
-.carousel-container h1 {
-  margin-bottom: 1.5rem;
-  font-size: 1.8rem;
-}
-
-.carousel {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 12px;
-}
-
-.carousel-track {
-  width: 100%;
-  overflow: hidden;
-}
-
-.slide {
-  display: none;
-  flex-direction: column;
-  align-items: center;
-  gap: 1rem;
-  background: #273e52;
-  padding: 1.5rem;
-  border-radius: 15px;
-  box-shadow: 0 5px 20px rgba(0, 0, 0, .15);
-  opacity: 0;
-  transform: translateX(30px);
-  transition: opacity 0.6s ease, transform 0.6s ease;
-}
-
-.slide.active {
-  display: flex;
-  opacity: 1;
-  transform: translateX(0);
-}
-
-.slide.fade-out {
-  opacity: 0;
-  transform: translateX(-30px);
-}
-
-.slide img {
-  width: 100%;
-  max-width: 350px;
-  height: auto;
-  object-fit: cover;
-  border-radius: 10px;
-}
-
-.slide a img {
-    cursor: pointer;
-}
-
-.content {
-  text-align: left;
-  width: 100%;
-}
-
-.content h4 {
-  font-size: 1.4rem;
-  margin-bottom: 0.5rem;
-  color: #fff5ec;
-}
-
-.content p {
-  font-size: 1rem;
-  line-height: 1.5;
-  color: #fff5ec;
-}
-
-.prev,
-.next {
-  border: none;
-  background: #333;
-  color: white;
-  width: 40px;
-  height: 40px;
-  font-size: 20px;
-  cursor: pointer;
-  border-radius: 50%;
-  transition: 0.3s;
-}
-
-.prev:hover,
-.next:hover {
-  background: #555;
-}
-
-
-/* =========================
-   MEDIA QUERIES
-   ========================== */
-/* MOBILE (≥320px y <700px) */
-@media (min-width: 320px) and (max-width: 699px) {
-  main {
-    padding: 1rem;
-  }
-
-  /* bloque intro: imagen arriba, texto abajo */
-  .bloque {
+/* Responsivo */
+@media (max-width:460px) {
+  .imagen-main {
     flex-direction: column;
-    align-items: center;
-    text-align: center;
   }
-
-  .bloque img {
+  p {
+    column-count: 1;
+  }
+  .barra-botones {
+    flex-direction: column;
+  }
+  .imagen-main img,
+  .obras-destacadas .obra img,
+  .imagen-principal img {
     max-width: 100%;
     height: auto;
   }
+}
 
-  /* galería: 1 columna */
-  .galeria {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .galeria img {
-    width: 100%;
-    margin-bottom: 1rem;
-  }
-
-  /* artistas: carrusel horizontal */
-  .artistas {
-    display: flex;
-    flex-direction: row;
-    overflow-x: auto;
-    scroll-snap-type: x mandatory;
-    gap: 1rem;
-  }
-
-  .artistas div {
-    flex: 0 0 80%;
-    max-width: 280px;
-    scroll-snap-align: center;
-  }
-
-  /* footer: bloques apilados */
-  .footer-contenido {
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-  }
-
-  .footer-info,
-  .footer-newsletter {
-    width: 100%;
-    margin-bottom: 1rem;
-  }
-
-  .footer-mapa iframe {
-    width: 100%;
-    height: 200px;
+@media (min-width:700px) and (max-width:1199px) {
+  /* Tablet */
+  p {
+    column-count: 2;
   }
 }
 
-
-/* TABLET (≥700px) */
-@media (min-width: 700px) {
-  main {
-    padding: 1.5rem 2rem;
-  }
-
-  /* bloque intro: imagen + texto al costado */
-  .bloque {
+@media (min-width:1200px) {
+  /* PC */
+  .barra-botones {
     flex-direction: row;
-    align-items: flex-start;
+    justify-content: space-around;
   }
-
-  .bloque img {
-    max-width: 320px;
-  }
-
-  /* galería: 2 columnas */
-  .galeria {
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-
-  .galeria img {
-    width: calc(50% - 1rem);
-  }
-
-  /* artistas: varias columnas */
-  .artistas {
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-
-  .artistas div {
-    flex: 1 1 250px;
-    max-width: 300px;
-  }
-
-  /* footer: columnas */
-  .footer-contenido {
-    flex-direction: row;
-    align-items: flex-start;
-  }
-
-  .footer-info,
-  .footer-newsletter {
+  .barra-botones li {
     flex: 1;
+    max-width: 200px;
+  }
+  p {
+    column-count: 3;
   }
 }
-
-/* ESCRITORIO (≥1200px) */
-@media (min-width: 1200px) {
-  nav {
-    justify-content: flex-start;
-    gap: 2rem;
-    padding: 1rem 2rem;
-  }
-
-  .menu {
-    display: flex;
-    flex-direction: row;
-    position: static;
-    width: auto;
-    background-color: transparent;
-    margin-left: auto;
-    padding: 0;
-    margin-top: 0;
-    box-shadow: none;
-  }
-
-  .menu > li {
-    border-top: none;
-    position: relative;
-  }
-
-  .menu a {
-    padding: 0.75rem 0.8rem;
-  }
-
-  .hamburger {
-    display: none;
-  }
-
-  /* submenús flotantes en desktop */
-  .submenu {
-    display: none;
-    position: absolute;
-    top: 100%;
-    left: 0;
-    padding: 0.5rem 0;
-    min-width: 220px;
-    border-radius: 5px;
-    background-color: #001f37;
-    margin: 0.5rem 0 0 0;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
-  }
-
-  .menu li:hover > .submenu {
-    display: block;
-  }
-
-  .submenu li a {
-    padding: 0.5rem 0.8rem;
-  }
-
-  main {
-    padding: 2rem 5rem;
-  }
-
-  .bloque img {
-    width: 350px;
-  }
-
-  /* galería 4 columnas */
-  .galeria img {
-    width: 250px;
-    height: 250px;
-    object-fit: cover;
-  }
-
-  /* carrusel más grande */
-  .carousel-container {
-    max-width: 1200px;
-  }
-
-  .slide {
-    flex-direction: row;
-    align-items: center;
-    height: 480px;
-  }
-
-  .slide img {
-    width: 400px;
-    height: 400px;
-  }
-
-  .content {
-    max-width: 600px;
-  }
-
-  .footer-mapa iframe {
-    width: 400px;
-    height: 250px;
-  }
-
-  .footer-newsletter {
-    align-items: flex-start;
-  }
-}
-
-
