@@ -260,6 +260,16 @@ footer a {
 
 
 /* CELULAR */
+@media (max-width:460px) {
+  /* estilos para pantallas chicas */
+} 
+.imagen-main {
+    flex-direction: column;   /* imágenes una debajo de otra */
+  }
+  p {
+    column-count: 1;          /* texto en una sola columna */
+  }
+
 
 
 @media (min-width:700px) {
