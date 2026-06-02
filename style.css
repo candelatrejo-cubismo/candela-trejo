@@ -261,16 +261,22 @@ footer a {
 
 /* CELULAR */
 @media (max-width:460px) {
-  /* estilos para pantallas chicas */
-} 
-.imagen-main {
-    flex-direction: column;   /* imágenes una debajo de otra */
+  .imagen-main {
+    flex-direction: column;   /* imágenes apiladas */
   }
   p {
     column-count: 1;          /* texto en una sola columna */
   }
-
-
+  .barra-botones {
+    flex-direction: column;   /* botones uno debajo del otro */
+  }
+  .imagen-main img,
+  .obras-destacadas .obra img,
+  .imagen-principal img {
+    max-width: 100%;          /* imágenes adaptables */
+    height: auto;
+  }
+}
 
 @media (min-width:700px) {
   /*TABLET*/
