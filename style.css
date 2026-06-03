@@ -158,33 +158,33 @@ h5{
 }
 
 
-/* Contenedor principal: imagen + texto */
+
 /* Contenedor principal: imagen + texto */
 .intro-cubismo {
   display: flex;              /* activa flexbox */
   flex-direction: row;        /* imagen a la izquierda, texto a la derecha */
-  align-items: flex-start;    /* alinea arriba */
-  gap: 30px;                  /* espacio entre imagen y texto */
-  max-width: 1200px;          /* ancho máximo del bloque */
-  margin: 40px auto;          /* centrado con margen */
+  align-items: flex-start;
+  gap: 30px;
+  max-width: 1200px;
+  margin: 40px auto;
 }
 
 /* Imagen */
 .intro-cubismo figure {
-  flex: 1;                    /* ocupa menos espacio que el texto */
+  flex: 1;
   margin: 0;
 }
 
 .intro-cubismo img {
-  width: 100%;                /* que se adapte al ancho del contenedor */
-  max-width: 500px;           /* tamaño máximo de la imagen */
+  width: 100%;
+  max-width: 500px;           /* tamaño grande */
   height: auto;
   border-radius: 10px;
 }
 
 /* Texto */
 .texto-cubismo {
-  flex: 2;                    /* ocupa más espacio que la imagen */
+  flex: 2;
 }
 
 .texto-cubismo h1 {
@@ -202,29 +202,34 @@ h5{
 }
 
 /* Botones */
+/* Contenedor de las barras */
 .barra-botones {
   display: flex;
   justify-content: center;
-  gap: 15px;
+  gap: 20px;
   margin: 30px auto;
   padding: 0;
   list-style: none;
 }
 
+/* Estilo de cada botón */
 .barra-botones li a {
   display: inline-block;
-  padding: 8px 18px; /* más cortos */
-  background-color: #b22222;
+  padding: 15px 40px;       /* más altos y más largos */
+  background-color: #c3423f; /* rojo consistente con títulos */
   color: #fff;
   text-decoration: none;
-  border-radius: 5px;
-  font-weight: 500;
+  border-radius: 25px;      /* bordes redondeados */
+  font-weight: 700;
+  font-size: 1rem;          /* tamaño de fuente cómodo */
+  min-width: 180px;         /* ancho mínimo para que se vean largos */
+  text-align: center;
+  transition: background-color 0.3s ease;
 }
 
 .barra-botones li a:hover {
-  background-color: #8b1a1a;
+  background-color: #8b1a1a; /* tono más oscuro al pasar el mouse */
 }
-
 
 
 
@@ -350,15 +355,14 @@ footer a {
   }
 
   .intro-cubismo img {
-    max-width: 100%;          /* ocupa todo el ancho disponible */
+    max-width: 100%;
   }
 
   .texto-cubismo {
-    flex: none;               /* deja de forzar proporción */
-    width: 100%;              /* ocupa todo el ancho */
+    flex: none;
+    width: 100%;
   }
 }
-
 
 
 @media (min-width:700px) {
