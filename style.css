@@ -197,7 +197,7 @@ header {
   text-align: center;
   padding: 10px 0;             /* menos alto */
   margin-bottom: 15px;         /* espacio más discreto */
-  font-weight: 600;            /* un poco más liviano */
+  font-weight: 500;            /* un poco más liviano */
   font-size: 1.5rem;           /* más chico que 2rem */
 }
 
