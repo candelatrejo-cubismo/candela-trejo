@@ -8,7 +8,7 @@ body {
 }
 
 main {
-  padding: 20px;
+  padding: 10px 15px; /* arriba/abajo 10px, laterales 15px */
 }
 
 /* Header y Footer al corte */
@@ -208,6 +208,16 @@ header {
   padding: 0;
 }
 
+/* Mostrar submenú en mobile con clase active */
+.nav-header ul li ul.active {
+  display: block;
+  position: static;   /* que se apilen en columna */
+  background-color: #1e1e1e;
+  margin-top: 10px;
+}
+
+
+
 /* Main */
 main {
   min-height: 100vh;
@@ -244,25 +254,6 @@ footer a {
   color: #ffffff;        
   text-decoration: none; 
   margin-right: 10px;   
-}
-
-/* Responsivo */
-@media (max-width:460px) {
-  .imagen-main {
-    flex-direction: column;
-  }
-  p {
-    column-count: 1;
-  }
-  .barra-botones {
-    flex-direction: column;
-  }
-  .imagen-main img,
-  .obras-destacadas .obra img,
-  .imagen-principal img {
-    max-width: 100%;
-    height: auto;
-  }
 }
 
 
