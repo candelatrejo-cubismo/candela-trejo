@@ -111,16 +111,15 @@ h5 {
   border-radius: 8px;
 }
 
-/* obras section */
+/* obras imagenes */
 .obra-img {
-  max-width: 200px;     /* límite de ancho más chico */
-  width: 20%;          /* ocupa el ancho disponible hasta 200px */
-  height: auto;         /* mantiene proporción original */
-  border-radius: 6px;   /* opcional */
+  max-width: 300px;    /* límite de ancho fijo */
+  width: 100%;         /* ocupa todo el ancho disponible hasta 300px */
+  height: auto;        /* mantiene proporción original */
+  border-radius: 6px;  /* opcional */
   display: block;
-  margin: 0 auto 10px;  /* centrado y espacio debajo */
+  margin: 0 auto 15px; /* centrado y espacio debajo */
 }
-
 
 /* Imagen principal */
 .imagen-principal {
@@ -443,3 +442,7 @@ footer a {
     text-align: left;
   }
 } }
+
+.obra-img {
+    max-width: 250px; /* más chica en pantallas grandes */
+  }
