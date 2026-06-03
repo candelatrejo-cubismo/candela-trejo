@@ -311,7 +311,6 @@ footer a {
 
 
 
-
 @media (max-width:460px) {
   /* Menú hamburguesa */
   .nav-header > ul {
@@ -331,7 +330,7 @@ footer a {
   }
 
   /* Intro Cubismo en móvil */
-   .intro-cubismo {
+  .intro-cubismo {
     flex-direction: column;   /* todo en vertical */
     align-items: center;      /* centrado */
     gap: 20px;
@@ -359,7 +358,8 @@ footer a {
     line-height: 1.6;
     text-align: left;
   }
-  }
+} /* ← acá cerramos bien la media query de celular */
+
 
 @media (min-width:700px) and (max-width:1199px) {
   .imagen-cubismoo {
@@ -384,8 +384,8 @@ footer a {
   }
 }
 
+
 @media (min-width:1200px) {
- 
   /* Imagen */
   .imagen-cubismoo {
     display: flex;            /* activa layout horizontal */
@@ -405,12 +405,12 @@ footer a {
     border-radius: 10px;
   }
 
- .texto-cubismo {
-  flex: 1;          /* ocupa todo el espacio restante */
-  width: 100%;      /* asegura que se expanda */
-  max-width: none;  /* elimina el límite de ancho */
-  text-align: left;
-}
+  .texto-cubismo {
+    flex: 1;          /* ocupa todo el espacio restante */
+    width: 100%;      /* asegura que se expanda */
+    max-width: none;  /* elimina el límite de ancho */
+    text-align: left;
+  }
 
   .texto-cubismo p {
     margin-bottom: 15px;
