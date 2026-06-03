@@ -396,15 +396,12 @@ footer a {
   }
 }
 
-
 @media (min-width:1200px) {
-  /* Imagen */
   .imagen-cubismoo {
     display: flex;            
     gap: 30px;
     align-items: flex-start;
     justify-content: flex-start;
-    /* sacá el width:100% para que no fuerce el estirado */
   }
 
   .imagen-cubismoo figure {
@@ -412,14 +409,14 @@ footer a {
   }
 
   .imagen-cubismoo img {
-    width: 300px;        /* tamaño fijo más chico */
-    max-width: 100%;     /* nunca se pasa del contenedor */
+    width: 300px;        /* ancho fijo para la imagen */
     height: auto;        /* mantiene proporción */
     border-radius: 10px;
+    flex-shrink: 0;      /* evita que se achique o empuje el texto */
   }
 
   .texto-cubismo {
-    flex: 1;          
+    flex: 1;             /* ocupa todo el espacio restante */
     text-align: left;
   }
 
