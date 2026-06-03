@@ -345,44 +345,51 @@ footer a {
 
 
 @media (min-width:1200px) {
-  /* Intro Cubismo */
-  .intro-cubismo {
-    flex-direction: column; /* título arriba */
-    align-items: flex-start; /* todo alineado a la izquierda */
-    gap: 30px;
-    max-width: 1200px;
-    margin: 0 auto;
-  }
+ .intro-cubismo {
+  display: flex;
+  flex-direction: column;   /* título arriba */
+  align-items: flex-start;  /* todo alineado a la izquierda */
+  gap: 30px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
 
+.intro-cubismo h1 {
+  text-align: left;         /* título alineado a la izquierda */
+  color: #c3423f;
+  text-decoration: underline;
+  font-weight: 900;
+}
 
-  /* Bloque imagen + texto */
-  .imagen-cubismoo .texto-cubismo {
-    display: flex;
-    flex-direction: row;
-    gap: 30px;
-    align-items: flex-start;
-    justify-content: flex-start; /* fuerza alineación a la izquierda */
-    width: 100%;
-  }
+/* Imagen + texto juntos */
+.imagen-cubismoo {
+  display: flex;
+  flex-direction: row;      /* imagen a la izquierda, texto a la derecha */
+  gap: 30px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  width: 100%;
+}
 
-  /* Imagen con clase personalizada */
-  .imagen-cubismoo {
-    max-width: 500px;
-    width: 100%;
-    height: auto;
-    border-radius: 10px;
-  }
+.imagen-cubismoo figure {
+  margin: 0;
+}
 
-  /* Texto al costado */
-  .texto-cubismo {
-    flex: 1;
-    max-width: 600px;
-    text-align: left; /* asegura alineación izquierda */
-  }
+.imagen-cubismoo img {
+  max-width: 400px;
+  height: auto;
+  border-radius: 10px;
+}
 
-  .texto-cubismo p {
-    margin-bottom: 15px;
-    line-height: 1.6;
-    text-align: left;
-  }
+.texto-cubismo {
+  flex: 1;
+  max-width: 700px;
+  text-align: left;
+}
+
+.texto-cubismo p {
+  margin-bottom: 15px;
+  line-height: 1.6;
+  text-align: left;
+}
 }
