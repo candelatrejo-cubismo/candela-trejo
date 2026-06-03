@@ -310,28 +310,12 @@ footer a {
 }
 
 @media (max-width:460px) {
-  /* Menú hamburguesa */
-  .nav-header > ul {
-    display: none;
-    flex-direction: column;
-    gap: 10px;
-    background-color: #1e1e1e;
-    padding: 10px;
-  }
-
-  .nav-header > ul.active {
-    display: flex;
-  }
-
-  .menu-toggle {
-    display: block;
-  }
-
   /* Intro Cubismo en móvil */
   .intro-cubismo {
     flex-direction: column;
     align-items: center;
     gap: 20px;
+    padding: 0 10px; /* un poco de margen lateral */
   }
 
   .intro-cubismo h1 {
@@ -341,20 +325,21 @@ footer a {
   /* Imagen arriba, texto abajo */
   .imagen-cubismoo {
     display: flex;
-    flex-direction: column;   /* apila imagen y texto */
+    flex-direction: column;
     align-items: center;
     gap: 20px;
     width: 100%;
   }
 
   .imagen-cubismoo img {
-    width: 100%;              /* ocupa todo el ancho disponible */
-    max-width: 100%;          /* nunca más grande que el contenedor */
-    height: auto;             /* mantiene proporción */
+    width: 90%;              /* más grande, ocupa casi todo el ancho */
+    max-width: 500px;        /* límite para que no se pase en pantallas medianas */
+    height: auto;            /* mantiene proporción */
     border-radius: 10px;
   }
 
   .texto-cubismo {
+    width: 100%;             /* texto ocupa todo el ancho */
     max-width: 100%;
     text-align: left;
   }
