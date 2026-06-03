@@ -192,15 +192,14 @@ header {
 
 /*secciones*/
 .banner-seccion {
-  background-color: #c3423f;   /* color destacado */
+  background-color: #2d1815;   /* color destacado */
   color: #fff;
   text-align: center;
-  padding: 20px 0;
-  margin-bottom: 20px;
-  font-weight: 700;
-  font-size: 2rem;
+  padding: 10px 0;             /* menos alto */
+  margin-bottom: 15px;         /* espacio más discreto */
+  font-weight: 600;            /* un poco más liviano */
+  font-size: 1.5rem;           /* más chico que 2rem */
 }
-
 
 
 /* Menú principal */
