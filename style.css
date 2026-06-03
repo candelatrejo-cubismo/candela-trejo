@@ -146,6 +146,36 @@ p {
 }
 
 
+/*parrafos de cubismo e imágen*/
+.intro-cubismo {
+  display: flex;
+  align-items: flex-start;
+  gap: 30px;
+  margin-bottom: 40px;
+}
+
+.intro-cubismo figure {
+  margin: 0;
+}
+
+.intro-cubismo img {
+  max-width: 400px;
+  height: auto;
+  border-radius: 10px;
+}
+
+.texto-cubismo {
+  flex: 1;
+}
+
+.texto-cubismo p {
+  margin-bottom: 15px;
+  color: #0a0a0a;
+  font-weight: 300;
+}
+
+
+
 /* Header */
 header {
   background-color: #1e1e1e;
@@ -292,6 +322,15 @@ footer a {
     column-count: 2;
   }
 }
+ .intro-cubismo {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .intro-cubismo img {
+    max-width: 100%;
+  }
+
 
 @media (min-width:1200px) {
   /* PC */
