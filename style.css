@@ -345,17 +345,7 @@ footer a {
 
 
 @media (min-width:1200px) {
-  /* Botones horizontales */
-  .barra-botones {
-    flex-direction: row;
-    justify-content: space-around;
-  }
-  .barra-botones li {
-    flex: 1;
-    max-width: 200px;
-  }
-
-  /* Intro Cubismo en PC */
+  /* Intro Cubismo */
   .intro-cubismo {
     flex-direction: column; /* título arriba */
     align-items: flex-start; /* todo alineado a la izquierda */
@@ -374,6 +364,8 @@ footer a {
     flex-direction: row;
     gap: 30px;
     align-items: flex-start;
+    justify-content: flex-start; /* fuerza alineación a la izquierda */
+    width: 100%;
   }
 
   /* Imagen con clase personalizada */
@@ -388,10 +380,12 @@ footer a {
   .texto-cubismo {
     flex: 1;
     max-width: 600px;
+    text-align: left; /* asegura alineación izquierda */
   }
 
   .texto-cubismo p {
     margin-bottom: 15px;
     line-height: 1.6;
+    text-align: left;
   }
 }
