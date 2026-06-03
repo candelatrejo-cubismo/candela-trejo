@@ -111,14 +111,15 @@ h5 {
   border-radius: 8px;
 }
 
-/*obras section*/
+/* obras section */
 .obra-img {
-  max-width: 400px;   /* límite de ancho */
-  width: 100%;        /* ocupa todo el ancho disponible */
-  height: auto;       /* mantiene proporción original */
-  border-radius: 8px; /* opcional */
+  width: 250px;        /* ancho fijo más chico */
+  height: 180px;       /* alto fijo más chico */
+  object-fit: cover;   /* recorta manteniendo proporción */
+  border-radius: 8px;  /* opcional */
+  display: block;
+  margin: 0 auto 15px; /* centrado y espacio debajo */
 }
-
 
 
 
