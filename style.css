@@ -113,14 +113,13 @@ h5 {
 
 /* obras section */
 .obra-img {
-  width: 250px;        /* ancho fijo más chico */
-  height: 180px;       /* alto fijo más chico */
-  object-fit: cover;   /* recorta manteniendo proporción */
-  border-radius: 8px;  /* opcional */
+  max-width: 200px;     /* límite de ancho más chico */
+  width: 100%;          /* ocupa el ancho disponible hasta 200px */
+  height: auto;         /* mantiene proporción original */
+  border-radius: 6px;   /* opcional */
   display: block;
-  margin: 0 auto 15px; /* centrado y espacio debajo */
+  margin: 0 auto 10px;  /* centrado y espacio debajo */
 }
-
 
 
 /* Imagen principal */
@@ -208,7 +207,7 @@ header {
   text-align: center;
   padding: 5px 0;              /* más finito */
   margin-bottom: 10px;         /* menos espacio debajo */
-  font-weight: 500;            /* texto liviano */
+  font-weight: 400;            /* texto liviano */
   font-size: 1.2rem;           /* más chico que 1.5rem */
 
 /* Estilo del título dentro del banner */
