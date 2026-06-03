@@ -329,19 +329,27 @@ footer a {
 
 
 @media (min-width:700px) and (max-width:1199px) {
-  /* Tablet */
-  p {
-    column-count: 2;
-  }
-}
- .intro-cubismo {
-    flex-direction: column;
-    gap: 20px;
+  .imagen-cubismoo {
+    display: flex;
+    flex-direction: column;   /* imagen arriba, texto abajo */
+    align-items: center;
+    gap: 25px;
+    width: 100%;
   }
 
-  .intro-cubismo img {
-    max-width: 100%;
+  .imagen-cubismoo img {
+    width: 80%;              /* ocupa bastante espacio */
+    max-width: 600px;        /* límite para que no se pase */
+    height: auto;
+    border-radius: 10px;
   }
+
+  .texto-cubismo {
+    width: 90%;              /* texto ancho */
+    max-width: 900px;
+    text-align: left;
+  }
+}
 
 @media (min-width:1200px) {
  
