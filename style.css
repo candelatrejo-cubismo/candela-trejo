@@ -413,6 +413,16 @@ footer a {
 }
 
 @media (min-width:1200px) {
+  /* Contenedor general: imagen + texto */
+  .intro-cubismo {
+    display: flex;            /* activa layout horizontal */
+    gap: 30px;                /* espacio entre imagen y texto */
+    align-items: flex-start;  /* alinea arriba */
+    justify-content: flex-start;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
   .imagen-cubismoo {
     display: flex;            
     gap: 30px;
