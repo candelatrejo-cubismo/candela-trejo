@@ -357,35 +357,41 @@ footer a {
 
   /* Intro Cubismo en PC */
   .intro-cubismo {
-    flex-direction: column; /* título + imagen en columna */
-    align-items: center;
+    flex-direction: column; /* título arriba */
+    align-items: flex-start; /* todo alineado a la izquierda */
     gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
   }
 
-  .intro-cubismo figure {
+  .intro-cubismo h1 {
+    text-align: left; /* título alineado a la izquierda */
+  }
+
+  /* Bloque imagen + texto */
+  .intro-cubismo .contenido {
     display: flex;
-    justify-content: center;
-    margin: 0;
+    flex-direction: row;
+    gap: 30px;
+    align-items: flex-start;
   }
 
-  .intro-cubismo img {
-    max-width: 600px;
+  /* Imagen con clase personalizada */
+  .imagen-cubismoo {
+    max-width: 500px;
     width: 100%;
     height: auto;
+    border-radius: 10px;
   }
 
   /* Texto al costado */
   .texto-cubismo {
-    display: flex;
-    flex-direction: row;
-    gap: 30px;
-    max-width: 1200px;
-    margin-top: 20px;
+    flex: 1;
+    max-width: 600px;
   }
 
   .texto-cubismo p {
-    flex: 1;              /* cada párrafo ocupa espacio proporcional */
-    margin: 0 10px;
+    margin-bottom: 15px;
     line-height: 1.6;
   }
 }
