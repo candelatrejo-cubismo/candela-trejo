@@ -163,28 +163,29 @@ h5{
 .intro-cubismo {
   display: flex;              /* activa flexbox */
   flex-direction: row;        /* imagen a la izquierda, texto a la derecha */
-  align-items: flex-start;
-  gap: 30px;
-  max-width: 1200px;
-  margin: 40px auto;
+  align-items: flex-start;    /* alinea arriba */
+  gap: 30px;                  /* espacio entre imagen y texto */
+  max-width: 1200px;          /* ancho máximo del bloque */
+  margin: 40px auto;          /* centrado horizontal de todo el bloque */
 }
 
 /* Imagen */
 .intro-cubismo figure {
-  flex: 1;
+  flex: 1;                    /* ocupa menos espacio que el texto */
   margin: 0;
 }
 
 .intro-cubismo img {
-  width: 100%;
-  max-width: 500px;           /* tamaño grande */
+  width: 100%;                /* que se adapte al ancho del contenedor */
+  max-width: 500px;           /* tamaño máximo de la imagen */
   height: auto;
   border-radius: 10px;
 }
 
 /* Texto */
 .texto-cubismo {
-  flex: 2;
+  flex: 2;                    /* ocupa más espacio que la imagen */
+  text-align: left;           /* todo alineado a la izquierda */
 }
 
 .texto-cubismo h1 {
@@ -192,6 +193,7 @@ h5{
   text-decoration: underline;
   font-weight: 900;
   margin-bottom: 20px;
+  text-align: left;           /* título alineado a la izquierda */
 }
 
 .texto-cubismo p {
@@ -199,6 +201,7 @@ h5{
   color: #0a0a0a;
   font-weight: 300;
   line-height: 1.6;
+  text-align: left;           /* párrafos alineados a la izquierda */
 }
 
 /* Botones */
