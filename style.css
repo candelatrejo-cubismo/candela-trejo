@@ -145,6 +145,7 @@ p {
   margin-bottom: 15px; /* espacio entre párrafos */
 }
 
+
 /* Header */
 header {
   background-color: #1e1e1e;
@@ -306,3 +307,7 @@ footer a {
     column-count: 3;
   }
 }
+  .texto-cubismo {
+    column-count: 3;
+    column-gap: 25px;
+  }
