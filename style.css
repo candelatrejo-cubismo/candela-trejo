@@ -311,7 +311,7 @@ footer a {
 
 
 
-@media (max-width:460px) {
+@media (max-width:768px) {
   /* Menú hamburguesa */
   .nav-header > ul {
     display: none; /* ocultar menú por defecto */
@@ -341,24 +341,25 @@ footer a {
   }
 
   .imagen-cubismoo {
-    max-width: 100%;   /* ocupa todo el ancho */
-    height: auto;      /* mantiene proporción */
+    display: flex;
+    flex-direction: column;   /* imagen arriba, texto abajo */
+    align-items: center;
+    gap: 20px;
+    width: 100%;
+  }
+
+  .imagen-cubismoo img {
+    width: 95%;          /* ocupa casi todo el ancho */
+    max-width: 600px;    /* límite para que no se pase */
+    height: auto;        /* mantiene proporción */
     border-radius: 10px;
   }
 
   .texto-cubismo {
-    flex: 1;           /* ocupa todo el espacio disponible */
-    width: 100%;       /* se estira hasta el borde */
-    max-width: none;   /* elimina límite de ancho */
+    width: 100%;
     text-align: left;
   }
 
-  .texto-cubismo p {
-    margin-bottom: 15px;
-    line-height: 1.6;
-    text-align: left;
-  }
-} /* ← acá cerramos bien la media query de celular */
 
 
 @media (min-width:700px) and (max-width:1199px) {
@@ -417,4 +418,4 @@ footer a {
     line-height: 1.6;
     text-align: left;
   }
-}
+} }
