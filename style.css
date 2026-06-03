@@ -111,6 +111,17 @@ h5 {
   border-radius: 8px;
 }
 
+/*obras section*/
+.obra-img {
+  max-width: 400px;   /* límite de ancho */
+  width: 100%;        /* ocupa todo el ancho disponible */
+  height: auto;       /* mantiene proporción original */
+  border-radius: 8px; /* opcional */
+}
+
+
+
+
 /* Imagen principal */
 .imagen-principal {
   display: flex;           
@@ -198,12 +209,12 @@ header {
   margin-bottom: 15px;         /* espacio más discreto */
   font-weight: 500;            /* un poco más liviano */
   font-size: 1.5rem;           /* más chico que 2rem */
-  
+
  h2{
   color: #ffffff;
 }
-
 }
+
 
 
 /* Menú principal */
