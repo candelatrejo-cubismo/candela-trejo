@@ -190,6 +190,22 @@ header {
   background-color: #1e1e1e;
 }
 
+/*diseño secciones*/
+.banner-seccion {
+  background-color: #c3423f;   /* color destacado */
+  color: #fff;
+  text-align: center;
+  padding: 20px 0;
+  margin-bottom: 20px;
+  font-weight: 700;
+  font-size: 2rem;
+}
+
+
+
+
+
+
 
 
 /* Menú principal */
