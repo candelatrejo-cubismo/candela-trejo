@@ -203,18 +203,21 @@ header {
 
 /*secciones*/
 .banner-seccion {
-  background-color: #2d1815;   /* color destacado */
+  background-color: #2d1815;   /* color uniforme */
   text-align: center;
-  padding: 10px 0;             /* menos alto */
-  margin-bottom: 15px;         /* espacio más discreto */
-  font-weight: 500;            /* un poco más liviano */
-  font-size: 1.5rem;           /* más chico que 2rem */
+  padding: 5px 0;              /* más finito */
+  margin-bottom: 10px;         /* menos espacio debajo */
+  font-weight: 500;            /* texto liviano */
+  font-size: 1.2rem;           /* más chico que 1.5rem */
 
- h2{
+/* Estilo del título dentro del banner */
+.banner-seccion h2 {
   color: #ffffff;
-}
-}
-
+  margin: 0;                   /* elimina espacio extra */
+  text-decoration: none;       /* sin subrayado */
+  font-weight: inherit;        /* usa el peso del contenedor */
+  font-size: inherit;          /* usa el tamaño del contenedor */
+} }
 
 
 /* Menú principal */
