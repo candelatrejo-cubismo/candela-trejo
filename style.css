@@ -423,22 +423,13 @@ footer a {
     margin: 0 auto;
   }
 
-  .imagen-cubismoo {
-    display: flex;            
-    gap: 30px;
-    align-items: flex-start;
-    justify-content: flex-start;
-  }
-
-  .imagen-cubismoo figure {
-    margin: 0;
-  }
-
+  /* Imagen */
   .imagen-cubismoo img {
-    width: 300px;        /* ancho fijo para la imagen */
+    width: 300px;        /* ancho fijo */
     height: auto;        /* mantiene proporción */
     border-radius: 10px;
-    flex-shrink: 0;      /* evita que se achique o empuje el texto */
+    flex-shrink: 0;      /* evita que se estire o achique */
+    object-fit: contain; /* asegura proporción correcta */
   }
 
   .texto-cubismo {
