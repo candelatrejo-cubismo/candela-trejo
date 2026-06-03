@@ -276,7 +276,23 @@ footer a {
   display: none; /* oculto por defecto */
 }
 
+@media (max-width:460px) {
+  .nav-header > ul {
+    display: none; /* ocultar menú */
+    flex-direction: column;
+    gap: 10px;
+    background-color: #1e1e1e;
+    padding: 10px;
+  }
 
+  .nav-header > ul.active {
+    display: flex; /* mostrar cuando se active */
+  }
+
+  .menu-toggle {
+    display: block; /* mostrar botón hamburguesa */
+  }
+}
 
 
 @media (min-width:700px) and (max-width:1199px) {
