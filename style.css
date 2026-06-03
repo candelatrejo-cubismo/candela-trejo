@@ -308,10 +308,10 @@ footer a {
   cursor: pointer;
   display: none; /* oculto por defecto */
 }
-
-@media (max-width:768px) {
+@media (max-width:460px) {
+  /* Menú hamburguesa */
   .nav-header > ul {
-    display: none;
+    display: none; /* ocultar menú por defecto */
     flex-direction: column;
     gap: 10px;
     background-color: #1e1e1e;
@@ -319,14 +319,44 @@ footer a {
   }
 
   .nav-header > ul.active {
-    display: flex;
+    display: flex; /* mostrar cuando se active */
   }
 
   .menu-toggle {
-    display: block;
+    display: block; /* botón hamburguesa visible */
+  }
+
+  /* Intro Cubismo en móvil */
+  .intro-cubismo {
+    flex-direction: column; /* todo en vertical */
+    align-items: center;    /* centrado */
+    gap: 20px;
+  }
+
+  .intro-cubismo h1 {
+    text-align: center;
+  }
+
+  /* Imagen arriba */
+  .imagen-cubismoo {
+    max-width: 100%;   /* ocupa todo el ancho */
+    height: auto;      /* mantiene proporción */
+    border-radius: 10px;
+  }
+
+  /* Texto debajo */
+  .texto-cubismo {
+    width: 100%;       /* ocupa todo el ancho */
+    max-width: none;   /* elimina límite */
+    text-align: left;
+  }
+
+  .texto-cubismo p {
+    margin-bottom: 15px;
+    line-height: 1.6;
+    text-align: left;
   }
 }
-
 
 @media (min-width:700px) and (max-width:1199px) {
   .imagen-cubismoo {
