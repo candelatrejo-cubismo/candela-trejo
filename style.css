@@ -157,30 +157,48 @@ h5{
   flex: 1;           
 }
 
+
+/* Contenedor principal: imagen + texto */
 /* Contenedor principal: imagen + texto */
 .intro-cubismo {
-  display: flex;
-  align-items: flex-start;
-  gap: 20px;
-  max-width: 1000px;
-  margin: 40px auto;
+  display: flex;              /* activa flexbox */
+  flex-direction: row;        /* imagen a la izquierda, texto a la derecha */
+  align-items: flex-start;    /* alinea arriba */
+  gap: 30px;                  /* espacio entre imagen y texto */
+  max-width: 1200px;          /* ancho máximo del bloque */
+  margin: 40px auto;          /* centrado con margen */
 }
 
 /* Imagen */
 .intro-cubismo figure {
-  flex: 1;
+  flex: 1;                    /* ocupa menos espacio que el texto */
   margin: 0;
 }
 
 .intro-cubismo img {
-  width: 100%;
+  width: 100%;                /* que se adapte al ancho del contenedor */
+  max-width: 500px;           /* tamaño máximo de la imagen */
   height: auto;
-  border-radius: 4px;
+  border-radius: 10px;
 }
 
 /* Texto */
 .texto-cubismo {
-  flex: 2;
+  flex: 2;                    /* ocupa más espacio que la imagen */
+}
+
+.texto-cubismo h1 {
+  color: #c3423f;
+  text-decoration: underline;
+  font-weight: 900;
+  margin-bottom: 20px;
+}
+
+.texto-cubismo p {
+  margin-bottom: 20px;
+  color: #0a0a0a;
+  font-weight: 300;
+  line-height: 1.6;
 }
 
 /* Botones */
@@ -206,6 +224,7 @@ h5{
 .barra-botones li a:hover {
   background-color: #8b1a1a;
 }
+
 
 
 
@@ -324,22 +343,23 @@ footer a {
 
 /* CELULAR */
 @media (max-width:460px) {
-  .imagen-main {
-    flex-direction: column;   /* imágenes apiladas */
+  .intro-cubismo {
+    flex-direction: column;   /* apila imagen y texto */
+    align-items: center;
+    text-align: center;
   }
-  p {
-    column-count: 1;          /* texto en una sola columna */
+
+  .intro-cubismo img {
+    max-width: 100%;          /* ocupa todo el ancho disponible */
   }
-  .barra-botones {
-    flex-direction: column;   /* botones uno debajo del otro */
-  }
-  .imagen-main img,
-  .obras-destacadas .obra img,
-  .imagen-principal img {
-    max-width: 100%;          /* imágenes adaptables */
-    height: auto;
+
+  .texto-cubismo {
+    flex: none;               /* deja de forzar proporción */
+    width: 100%;              /* ocupa todo el ancho */
   }
 }
+
+
 
 @media (min-width:700px) {
   /*TABLET*/
