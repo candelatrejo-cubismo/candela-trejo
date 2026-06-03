@@ -344,23 +344,10 @@ footer a {
   }
 
 @media (min-width:1200px) {
-  /* Intro Cubismo */
-  .intro-cubismo {
-    flex-direction: column;   /* título arriba */
-    align-items: flex-start;  /* todo alineado a la izquierda */
-    gap: 30px;
-    max-width: 1200px;
-    margin: 0 auto;
-  }
-
-  .intro-cubismo h1 {
-    text-align: left;
-  }
-
+ 
   /* Imagen */
   .imagen-cubismoo {
     display: flex;            /* activa layout horizontal */
-    flex-direction: row;      /* imagen a la izquierda, texto a la derecha */
     gap: 30px;
     align-items: flex-start;
     justify-content: flex-start;
