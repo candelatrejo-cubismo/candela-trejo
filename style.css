@@ -114,7 +114,7 @@ h5 {
 /* obras section */
 .obra-img {
   max-width: 200px;     /* límite de ancho más chico */
-  width: 100%;          /* ocupa el ancho disponible hasta 200px */
+  width: 20%;          /* ocupa el ancho disponible hasta 200px */
   height: auto;         /* mantiene proporción original */
   border-radius: 6px;   /* opcional */
   display: block;
