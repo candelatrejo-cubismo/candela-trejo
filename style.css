@@ -308,6 +308,10 @@ footer a {
   cursor: pointer;
   display: none; /* oculto por defecto */
 }
+
+
+
+
 @media (max-width:460px) {
   /* Menú hamburguesa */
   .nav-header > ul {
@@ -327,9 +331,9 @@ footer a {
   }
 
   /* Intro Cubismo en móvil */
-  .intro-cubismo {
-    flex-direction: column; /* todo en vertical */
-    align-items: center;    /* centrado */
+   .intro-cubismo {
+    flex-direction: column;   /* todo en vertical */
+    align-items: center;      /* centrado */
     gap: 20px;
   }
 
@@ -337,17 +341,16 @@ footer a {
     text-align: center;
   }
 
-  /* Imagen arriba */
   .imagen-cubismoo {
     max-width: 100%;   /* ocupa todo el ancho */
     height: auto;      /* mantiene proporción */
     border-radius: 10px;
   }
 
-  /* Texto debajo */
   .texto-cubismo {
-    width: 100%;       /* ocupa todo el ancho */
-    max-width: none;   /* elimina límite */
+    flex: 1;           /* ocupa todo el espacio disponible */
+    width: 100%;       /* se estira hasta el borde */
+    max-width: none;   /* elimina límite de ancho */
     text-align: left;
   }
 
@@ -356,7 +359,7 @@ footer a {
     line-height: 1.6;
     text-align: left;
   }
-}
+  }
 
 @media (min-width:700px) and (max-width:1199px) {
   .imagen-cubismoo {
