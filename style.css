@@ -190,7 +190,7 @@ header {
   background-color: #1e1e1e;
 }
 
-/*diseño secciones*/
+/*secciones*/
 .banner-seccion {
   background-color: #c3423f;   /* color destacado */
   color: #fff;
@@ -200,11 +200,6 @@ header {
   font-weight: 700;
   font-size: 2rem;
 }
-
-
-
-
-
 
 
 
@@ -405,11 +400,11 @@ footer a {
 @media (min-width:1200px) {
   /* Imagen */
   .imagen-cubismoo {
-    display: flex;            /* activa layout horizontal */
+    display: flex;            
     gap: 30px;
     align-items: flex-start;
     justify-content: flex-start;
-    width: 100%;
+    /* sacá el width:100% para que no fuerce el estirado */
   }
 
   .imagen-cubismoo figure {
@@ -417,15 +412,14 @@ footer a {
   }
 
   .imagen-cubismoo img {
-    max-width: 400px;
-    height: auto;
+    width: 300px;        /* tamaño fijo más chico */
+    max-width: 100%;     /* nunca se pasa del contenedor */
+    height: auto;        /* mantiene proporción */
     border-radius: 10px;
   }
 
   .texto-cubismo {
-    flex: 1;          /* ocupa todo el espacio restante */
-    width: 100%;      /* asegura que se expanda */
-    max-width: none;  /* elimina el límite de ancho */
+    flex: 1;          
     text-align: left;
   }
 
