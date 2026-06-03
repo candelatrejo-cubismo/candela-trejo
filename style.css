@@ -354,12 +354,9 @@ footer a {
     margin: 0 auto;
   }
 
-  .intro-cubismo h1 {
-    text-align: left; /* título alineado a la izquierda */
-  }
 
   /* Bloque imagen + texto */
-  .intro-cubismo .contenido {
+  .imagen-cubismoo .texto-cubismo {
     display: flex;
     flex-direction: row;
     gap: 30px;
