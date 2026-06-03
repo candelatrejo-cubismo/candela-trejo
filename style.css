@@ -372,10 +372,12 @@ footer a {
     border-radius: 10px;
   }
 
-  .texto-cubismo {
-    flex: 1;
-    text-align: left;
-  }
+ .texto-cubismo {
+  flex: 1;          /* ocupa todo el espacio restante */
+  width: 100%;      /* asegura que se expanda */
+  max-width: none;  /* elimina el límite de ancho */
+  text-align: left;
+}
 
   .texto-cubismo p {
     margin-bottom: 15px;
